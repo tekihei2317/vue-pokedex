@@ -27,7 +27,7 @@ export default {
     <div v-if="loading">Loading...</div>
     <div v-else class="pokemons mt-8">
       <div v-for="pokemon in result.pokemons" :key="pokemon.id">
-        <router-link :to="`/pokemons/${pokemon.number}`" class="block aspect-w-1 aspect-h-1">
+        <router-link :to="`/pokemons/${pokemon.id}`" class="block aspect-w-1 aspect-h-1">
           <img :src="pokemon.image" class="object-contain" />
         </router-link>
         <div class="text-sm text-gray-500"># {{ pokemon.number }}</div>
